@@ -339,9 +339,5 @@ packer.startup(function(use)
   use({ "tweekmonster/startuptime.vim" })
   -- }}} Other
 
-  use("github/copilot.vim")
-  use({
-    "MunifTanjim/eslint.nvim",
-    config = get_config("lsp.eslint"),
-  })
+  use({ "github/copilot.vim", config = get_config("coding.copilot") })
 end)
