@@ -25,6 +25,7 @@ keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" }) 
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
+-- tab management
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
@@ -36,6 +37,3 @@ keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save file" })
 
 -- select all
 keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
-
--- run tests
-keymap.set("n", "<leader>tt", ":lua require('neotest').run().run()<CR>", { desc = "Run nearest test" })

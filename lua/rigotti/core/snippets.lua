@@ -24,8 +24,6 @@ return {
     }),
   },
   typescriptreact = { -- snippets for TypeScript React
-    -- Functional Component
-    snippet("rfc", {}),
     -- useState Hook
     snippet("useState", {
       text("const ["),
@@ -38,6 +36,7 @@ return {
       insert(4, "initialValue"),
       text(");"),
     }),
+
     -- useEffect Hook
     snippet("useEffect", {
       text({ "useEffect(() => {", "  " }),
@@ -45,6 +44,17 @@ return {
       text({ "", "}, [", "  " }),
       insert(2),
       text({ "", "]);" }),
+    }),
+
+    -- useCallback Hook
+    snippet("useCallback", {
+      text("const "),
+      insert(1, "callbackName"),
+      text(" = useCallback(() => {"),
+      insert(2),
+      text("}, ["),
+      insert(3),
+      text("]);"),
     }),
   },
   -- Add other filetypes as needed
