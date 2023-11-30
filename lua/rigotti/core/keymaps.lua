@@ -37,3 +37,6 @@ keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save file" })
 
 -- select all
 keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
+
+-- open lazygit
+keymap.set("n", "<leader>gg", "<cmd>LazyGit<CR>", { desc = "Open lazygit" })
