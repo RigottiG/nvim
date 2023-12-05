@@ -32,8 +32,11 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
--- save file with ctrl -
+-- save file with ctrl - s
 keymap.set("n", "<C-s>", ":w<CR>", { desc = "Save file" })
+
+-- save file in insert mode
+keymap.set("i", "<C-s>", "<ESC>:w<CR>", { desc = "Save file in insert mode" })
 
 -- select all
 keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
