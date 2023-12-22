@@ -56,6 +56,15 @@ return {
       insert(3),
       text("]);"),
     }),
+
+    -- it test
+    snippet("it", {
+      text("it('"),
+      insert(1),
+      text("', () => {"),
+      insert(0),
+      text("});"),
+    }),
   },
   -- Add other filetypes as needed
 }
