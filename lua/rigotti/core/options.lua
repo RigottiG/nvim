@@ -40,3 +40,10 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+vim.api.nvim_exec(
+  [[
+let $GIT_EDITOR = "nvr -cc split --remote-wait +'set bufhidden=wipe'"
+]],
+  false
+)

@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "rigotti.plugins" }, { import = "rigotti.plugins.lsp" } }, {
   install = {
-    colorscheme = { "nightfly" },
+    colorscheme = { "moonbow" },
   },
   checker = {
     enabled = true,

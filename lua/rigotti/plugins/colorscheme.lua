@@ -1,12 +1,44 @@
 return {
+  -- {
+  --   "bluz71/vim-nightfly-guicolors",
+  --   priority = 1000, -- make sure to load this before all the other start plugins
+  --   config = function()
+  --     -- load the colorscheme here
+  --     vim.cmd([[colorscheme nightfly]])
+  --   end,
+  -- },
+  --
+  -- {
+  --   "savq/melange-nvim",
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd([[colorscheme melange]])
+  --   end,
+  -- },
+  -- {
+  --   "arturgoms/moonbow.nvim",
+  --   priority = 1000,
+  --   config = function()
+  --     vim.cmd([[colorscheme moonbow]])
+  --   end,
+  -- },
   {
-    "bluz71/vim-nightfly-guicolors",
-    priority = 1000, -- make sure to load this before all the other start plugins
+    "ellisonleao/gruvbox.nvim",
+    priority = 1000,
     config = function()
-      -- load the colorscheme here
-      vim.cmd([[colorscheme nightfly]])
+      vim.cmd([[colorscheme gruvbox]])
     end,
   },
+  -- {
+  --   {
+  --     "EdenEast/nightfox.nvim",
+  --     priority = 1000,
+  --     config = function()
+  --       require("nightfox").load("nordfox")
+  --     end,
+  --   },
+  -- },
+  --
   -- {
   --   "folke/tokyonight.nvim",
   --   priority = 1000, -- make sure to load this before all the other start plugins
